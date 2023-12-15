@@ -1,0 +1,299 @@
+body {
+  /* Gradient berwarna merah dan oranye */
+  background: linear-gradient(135deg, #FEF5F1, #FEF5F1);
+  /* Untuk menjaga konten tetap di tengah dan mudah dibaca, bisa tambahkan padding */
+  padding: 20px;
+  /* Gunakan warna putih untuk teks di dalam body agar kontras dengan latar belakang */
+  color: white;
+}
+
+
+.button-container {
+  display: flex;
+  flex-direction: row; /* Mengatur agar menjadi horizontal */
+  align-items: center;
+  
+}
+
+
+
+.nav-link:hover{
+  color: #D94809 !important;
+}
+
+
+.sign-in {
+  color: black;
+  border-color: #D94809; /* Warna border pada tombol Sign In */
+  background-color: transparent; /* Jadikan latar belakang transparan */
+  padding: 8px 16px; /* Padding untuk memberi ruang di dalam lonjong */
+  display: flex; /* Mengaktifkan flexbox */
+  align-items: center; /* Pusatkan secara vertikal */
+  justify-content: center; /* Pusatkan secara horizontal */
+}
+
+.sign-in,
+.sign-up {
+  color: black;
+  border-color: #D94809;
+  background-color: transparent;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  border: 4px solid transparent;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 2px;
+  font-weight: bold;
+  text-decoration: none; /* Untuk menghapus garis bawah pada tautan */
+}
+
+.sign-up {
+  color: black;
+  border-color: #D94809; /* Warna border pada tombol Sign Up */
+  background-color: rgba(255, 255, 255, 0.5); /* Warna isi lonjong dengan transparansi */
+  padding: 8px 16px; /* Padding untuk memberi ruang di dalam lonjong */
+  display: flex; /* Mengaktifkan flexbox */
+  align-items: center; /* Pusatkan secara vertikal */
+  justify-content: center; /* Pusatkan secara horizontal */
+  
+}
+
+.sign-in:hover,
+.sign-up:hover,
+.sign-in:active,
+.sign-up:active {
+  border-color: #D94809;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.custom-margin-top {
+  margin-top: 150px;
+}
+
+.custom-button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  font-size: 20px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #EABBA6, #D94809); /* Gradien dua warna */
+  color: white;
+  margin-top: 20px; 
+}
+
+.custom-button:hover {
+  background: linear-gradient(45deg, #D94809, #EABBA6); /* Gradien dua warna saat hover */
+}
+
+.container-col {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: none; /* Tinggi halaman */
+}
+
+#features {
+  font-size: 40px; /* Ubah ukuran teks Features sesuai keinginan Anda */
+}
+
+.custom-col {
+  background-color: white; /* Warna latar belakang */
+  color: black; /* Warna teks */
+  padding: 20px; /* Padding di dalam kolom */
+  text-align: center; /* Posisi teks di tengah */
+  width: 1500px; /* Lebar kolom */
+  height: 300px; /* Tinggi kolom */
+  border-radius: 25px; /* Membuat sudut melengkung pada kolom */
+  font-size: 20px;/* Ukuran teks */
+  font-weight: bold; /* Ketebalan teks */
+
+  /* Responsif saat layar kecil (misalnya, ukuran layar kurang dari 600px) */
+  @media screen and (max-width: 600px) {
+    width: 80%; /* Lebar kolom saat layar kecil */
+    height: auto; /* Tinggi kolom menyesuaikan konten */
+    font-size: 18px; /* Ukuran teks saat layar kecil */
+  }
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between; /* Membuat gambar diatur dengan jarak yang sama */
+  margin-top: 50px; /* Jarak antara teks dan gambar */
+  align-items: center; /* Posisi gambar ke tengah */
+  flex-wrap: wrap; /* Memungkinkan gambar untuk memulai baris baru jika tidak cukup ruang */
+}
+
+.image-container img {
+  width: 50px; /* Lebar gambar */
+  height: 50px; /* Tinggi gambar */
+  border-radius: 0%; /* Membuat gambar berbentuk lingkaran */
+  margin-bottom: 10px; /* Jarak antara gambar dengan teks */
+}
+
+.left {
+  width: 70px; /* Ubah ukuran lebar gambar kiri */
+  margin-left: 200px; /* Geser gambar kiri ke kanan */
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.center .text-under {
+  font-size: 20px; /* Ukuran teks */
+  color: black; /* Warna teks */
+  margin-top: 5px; /* Jarak antara teks dan gambar */
+  font-weight: bold; /* Memberi teks ke tebalan */
+  white-space: nowrap; /* Mencegah teks memanjang ke bawah */
+  display: inline-block; /* Memastikan teks tetap di tengah */
+}
+
+
+.right {
+  width: 70px; /* Ubah ukuran lebar gambar kanan */
+  margin-right: 200px; /* Geser gambar kanan ke kiri */
+}
+
+/* CSS untuk teks di bawah gambar */
+.text-under {
+  font-size: 20px; /* Ukuran teks */
+  color: black; /* Warna teks */
+  text-align: center; /* Posisi teks di tengah */
+  margin-top: 5px; /* Jarak antara teks dan gambar */
+  width: 100px; /* Lebar teks di sebelah kiri dan kanan */
+  font-weight: bold !important; /* Memberi teks ke tebalan */
+  white-space: nowrap; /* Mencegah teks memanjang ke bawah */
+  display: flex; /* Menggunakan flexbox */
+  justify-content: center; /* Memusatkan teks horizontal */
+  align-items: center; /* Memusatkan teks vertical */
+}
+
+
+.additional-text {
+  font-size: 16px; /* Ukuran teks tambahan */
+  color: gray; /* Warna teks tambahan */
+  text-align: center; /* Posisi teks di tengah */
+  white-space: nowrap; /* Teks tidak memanjang */
+  margin-top: 3px; /* Jarak antara teks dan gambar */
+  
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Responsif untuk grid dan isinya saat layar kecil */
+@media screen and (max-width: 600px) {
+  .left,
+  .center,
+  .right {
+    width: 100%; /* Ubah lebar agar dapat menyesuaikan layar kecil */
+    margin-left: 0; /* Hilangkan margin kiri */
+    margin-right: 0; /* Hilangkan margin kanan */
+    text-align: center; /* Posisikan teks ke tengah */
+  }
+
+  .text-under {
+    width: 100%; /* Agar konten tetap berada di tengah */
+    font-size: 16px; /* Sesuaikan ukuran font untuk layar kecil */
+  }
+
+  .additional-text {
+    font-size: 14px; /* Sesuaikan ukuran font tambahan untuk layar kecil */
+  }
+
+  .image-container img {
+    width: 70px; /* Ubah ukuran gambar untuk layar kecil */
+    height: 70px; /* Ubah ukuran gambar untuk layar kecil */
+    margin-bottom: 5px; /* Sesuaikan jarak antara gambar dan teks */
+  }
+}
+
+/* Responsif untuk grid container dan kolomnya */
+@media screen and (max-width: 768px) {
+  .custom-col {
+    width: 100%; /* Ubah lebar kolom agar menyesuaikan layar kecil */
+  }
+}
+
+
+.additional-features {
+  padding: 40px 0; /* Padding di atas dan bawah */
+}
+
+.row {
+  display: flex; /* Membuat grid horizontal */
+  justify-content: space-between; /* Mengatur jarak antara grid */
+  flex-wrap: wrap; /* Memungkinkan grid untuk melanjutkan ke baris baru */
+}
+
+.col-md-3 {
+  flex: 0 0 23%; /* Atur lebar relatif grid */
+  max-width: 23%; /* Batasi lebar maksimum */
+  margin-bottom: 20px; /* Jarak antara grid */
+  position: relative; /* Atur posisi relatif untuk container grid */
+}
+
+.additional-grid {
+  position: relative; /* Atur posisi relatif untuk container grid */
+  margin-bottom: 20px; /* Jarak antara grid tambahan */
+  border: 2px solid #DDD; /* Border untuk memisahkan grid */
+  border-radius: 15px; /* Sudut melengkung pada border */
+  overflow: hidden; /* Hindari overflow gambar dari border */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+
+.additional-grid:hover .text-overlay {
+  opacity: 1;
+}
+
+.text-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 30px; /* Ubah ukuran teks di sini */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
