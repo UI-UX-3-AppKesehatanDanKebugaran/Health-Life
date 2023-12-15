@@ -43,8 +43,8 @@
             </li>
           </ul>
           <div class="button-container">
-            <a href="signin.html" class="sign-in">Sign In</a>
-            <a href="signup.html" class="sign-up">Sign Up</a>
+            <a href="login.html" class="sign-in">Sign In</a>
+            <!-- <a href="login.html" class="sign-up">Sign Up</a> -->
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@
           <h6 class="text-dark">Seberapa besar komitmen Anda untuk melakukan perubahan<br>
             yang diperlukan untuk kesehatan Anda, Minuman herbal adalah <br>
             kesenangan hidup yang luar biasa.</h6>
-          <a href="signin.html">
+          <a href="login.html">
             <button type="button" class="btn-lg custom-button fw-bold">Mulai</button>
           </a>
         </div>
@@ -153,16 +153,82 @@
     </div>
 </div>
  <!-- area feature selesai -->
+  
+  <!-- area about -->
+  <!-- area about selesai -->
+  
+  <!-- area contact -->
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+  
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>Need Help? <span>Contact Us</span></p>
+      </div>
+  
+      <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+        <div class="row">
+          <div class="col-xl-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="col-xl-6 form-group">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+        <div class="text-center"><button type="submit">Send Message</button></div>
+      </form><!--End Contact Form -->
+  
+    </div>
+  </section>
+  <!-- area contact selesai -->
 
   <!-- area shop -->
   <!-- area shop selesai -->
   
+  <!-- area footer -->
+  <footer id="footer" class="footer">
+  
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="container">
+      <div class="copyright">
+        &copy; 2023 <strong><span>Health Life</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  
+  </footer>
+  <!-- area footer selesai -->
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
 </main>
   
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
